@@ -1,0 +1,4 @@
+*__SINGLE_A=0;
+*__SINGLE_B=0;
+*__SINGLE_C=0;
+*__SINGLE_DELTA=0;

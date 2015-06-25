@@ -1,0 +1,17 @@
+if(__SINGLE_A==NULL){
+__SINGLE_A=(float*)mem_static_malloc(4);
+*__SINGLE_A=0;
+}
+if(__SINGLE_B==NULL){
+__SINGLE_B=(float*)mem_static_malloc(4);
+*__SINGLE_B=0;
+}
+if(__SINGLE_C==NULL){
+__SINGLE_C=(float*)mem_static_malloc(4);
+*__SINGLE_C=0;
+}
+if(__SINGLE_DELTA==NULL){
+__SINGLE_DELTA=(float*)mem_static_malloc(4);
+*__SINGLE_DELTA=0;
+}
+static int32 ongo_860=0;

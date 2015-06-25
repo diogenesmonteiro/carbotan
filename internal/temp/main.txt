@@ -1,0 +1,408 @@
+S_0:;
+do{
+sub_cls(NULL,NULL,0);
+if(!qbevent)break;evnt(1);}while(r);
+do{
+sub_sound( 600 , 2 );
+if(!qbevent)break;evnt(2);}while(r);
+do{
+qbg_screen( 1 ,NULL,NULL,NULL,NULL,1);
+if(!qbevent)break;evnt(3);}while(r);
+do{
+sub_line( 0 , 20 , 315 , 20 ,NULL,NULL,NULL,1);
+if(!qbevent)break;evnt(4);}while(r);
+do{
+sub_line( 0 , 176 , 315 , 176 ,NULL,NULL,NULL,1);
+if(!qbevent)break;evnt(4);}while(r);
+do{
+qbg_sub_locate( 1 , 2 ,NULL,NULL,NULL,3);
+if(!qbevent)break;evnt(5);}while(r);
+do{
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("  ***** EQUACAO DE SEGUNDO GRAU *****   ",40));
+if (new_error) goto skip847;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+skip847:
+qbs_cleanup(qbs_tmp_base,0);
+if(!qbevent)break;evnt(5);}while(r);
+do{
+qbg_sub_locate( 24 , 6 ,NULL,NULL,NULL,3);
+if(!qbevent)break;evnt(6);}while(r);
+do{
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("ELABORADO POR DIOGENES MONTEIRO",31));
+if (new_error) goto skip848;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+skip848:
+qbs_cleanup(qbs_tmp_base,0);
+if(!qbevent)break;evnt(6);}while(r);
+LABEL_1:;
+last_line=1;
+if(qbevent){evnt(7);r=0;}
+do{
+sub_sound( 600 , 2 );
+if(!qbevent)break;evnt(7);}while(r);
+do{
+qbg_sub_locate( 5 , 9 ,NULL,NULL,NULL,3);
+if(!qbevent)break;evnt(7);}while(r);
+do{
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("ENTRE COM  A,B,C                ",32));
+if (new_error) goto skip849;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+skip849:
+qbs_cleanup(qbs_tmp_base,0);
+if(!qbevent)break;evnt(7);}while(r);
+do{
+sub_line( 0 , 0 , 315 , 196 ,NULL, 1 ,NULL,1);
+if(!qbevent)break;evnt(8);}while(r);
+do{
+qbg_sub_locate( 5 , 9 ,NULL,NULL,NULL,3);
+if(!qbevent)break;evnt(9);}while(r);
+do{
+qbs_print(qbs_new_txt_len("ENTRE COM  A,B,C ",17),0);
+qbs_print(qbs_new_txt("? "),0);
+qbs_input_variabletypes[1]=536870944;
+qbs_input_variableoffsets[1]=&(*__SINGLE_A);
+qbs_input_variabletypes[2]=536870944;
+qbs_input_variableoffsets[2]=&(*__SINGLE_B);
+qbs_input_variabletypes[3]=536870944;
+qbs_input_variableoffsets[3]=&(*__SINGLE_C);
+qbs_input(3,1);
+if (stop_program) end();
+qbs_cleanup(qbs_tmp_base,0);
+if(!qbevent)break;evnt(9);}while(r);
+do{
+qbg_sub_locate( 20 , 5 ,NULL,NULL,NULL,3);
+if(!qbevent)break;evnt(9);}while(r);
+do{
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("                              ",30));
+if (new_error) goto skip850;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+skip850:
+qbs_cleanup(qbs_tmp_base,0);
+if(!qbevent)break;evnt(9);}while(r);
+do{
+sub_line( 0 , 0 , 315 , 196 ,NULL, 1 ,NULL,1);
+if(!qbevent)break;evnt(10);}while(r);
+do{
+qbg_sub_locate( 8 , 4 ,NULL,NULL,NULL,3);
+if(!qbevent)break;evnt(11);}while(r);
+do{
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("           ",11));
+if (new_error) goto skip851;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+qbs_print(nothingstring,1);
+skip851:
+qbs_cleanup(qbs_tmp_base,0);
+if(!qbevent)break;evnt(11);}while(r);
+do{
+qbg_sub_locate( 10 , 4 ,NULL,NULL,NULL,3);
+if(!qbevent)break;evnt(11);}while(r);
+do{
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("                                   ",35));
+if (new_error) goto skip852;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+skip852:
+qbs_cleanup(qbs_tmp_base,0);
+if(!qbevent)break;evnt(11);}while(r);
+S_23:;
+if ((-(*__SINGLE_A== 0 ))||new_error){
+if(qbevent){evnt(12);if(r)goto S_23;}
+do{
+qbg_sub_locate( 8 , 5 ,NULL,NULL,NULL,3);
+if(!qbevent)break;evnt(12);}while(r);
+do{
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("A=0 :",5));
+if (new_error) goto skip853;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+qbs_print(nothingstring,1);
+skip853:
+qbs_cleanup(qbs_tmp_base,0);
+if(!qbevent)break;evnt(12);}while(r);
+do{
+qbg_sub_locate( 10 , 5 ,NULL,NULL,NULL,3);
+if(!qbevent)break;evnt(12);}while(r);
+do{
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("NAO EXISTE EQUACAO DE SEGUNDO GRAU",34));
+if (new_error) goto skip854;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+qbs_print(nothingstring,1);
+skip854:
+qbs_cleanup(qbs_tmp_base,0);
+if(!qbevent)break;evnt(12);}while(r);
+do{
+qbg_sub_locate( 16 , 5 ,NULL,NULL,NULL,3);
+if(!qbevent)break;evnt(12);}while(r);
+do{
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("X1= ?",5));
+if (new_error) goto skip855;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("             ",13));
+if (new_error) goto skip855;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+qbs_print(nothingstring,1);
+skip855:
+qbs_cleanup(qbs_tmp_base,0);
+if(!qbevent)break;evnt(12);}while(r);
+do{
+qbg_sub_locate( 18 , 5 ,NULL,NULL,NULL,3);
+if(!qbevent)break;evnt(12);}while(r);
+do{
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("X2= ?",5));
+if (new_error) goto skip856;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("             ",13));
+if (new_error) goto skip856;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+qbs_print(nothingstring,1);
+skip856:
+qbs_cleanup(qbs_tmp_base,0);
+if(!qbevent)break;evnt(12);}while(r);
+do{
+qbg_sub_locate( 13 , 5 ,NULL,NULL,NULL,3);
+if(!qbevent)break;evnt(12);}while(r);
+do{
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("                                   ",35));
+if (new_error) goto skip857;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+qbs_print(nothingstring,1);
+skip857:
+qbs_cleanup(qbs_tmp_base,0);
+if(!qbevent)break;evnt(12);}while(r);
+do{
+goto LABEL_1;
+if(!qbevent)break;evnt(12);}while(r);
+}
+do{
+*__SINGLE_DELTA=(*__SINGLE_B**__SINGLE_B)-( 4 **__SINGLE_A**__SINGLE_C);
+if(!qbevent)break;evnt(13);}while(r);
+do{
+qbg_sub_locate( 10 , 5 ,NULL,NULL,NULL,3);
+if(!qbevent)break;evnt(13);}while(r);
+do{
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("DELTA=",6));
+if (new_error) goto skip858;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_add(qbs_str((float)(*__SINGLE_DELTA)),qbs_new_txt(" ")));
+if (new_error) goto skip858;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("               ",15));
+if (new_error) goto skip858;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+qbs_print(nothingstring,1);
+skip858:
+qbs_cleanup(qbs_tmp_base,0);
+if(!qbevent)break;evnt(13);}while(r);
+do{
+qbg_sub_locate( 13 , 5 ,NULL,NULL,NULL,3);
+if(!qbevent)break;evnt(13);}while(r);
+do{
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("                                   ",35));
+if (new_error) goto skip859;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+qbs_print(nothingstring,1);
+skip859:
+qbs_cleanup(qbs_tmp_base,0);
+if(!qbevent)break;evnt(13);}while(r);
+do{
+ongo_860=func_sgn((float)(*__SINGLE_DELTA))+ 2 ;
+if (ongo_860==1) goto LABEL_2;
+if (ongo_860==2) goto LABEL_3;
+if (ongo_860==3) goto LABEL_3;
+if (ongo_860<0) error(5);
+if(!qbevent)break;evnt(14);}while(r);
+LABEL_2:;
+last_line=2;
+if(qbevent){evnt(15);r=0;}
+do{
+qbg_sub_locate( 13 , 5 ,NULL,NULL,NULL,3);
+if(!qbevent)break;evnt(15);}while(r);
+do{
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("DELTA (-),NAO EXISTEM RAIZES REAIS",34));
+if (new_error) goto skip861;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+qbs_print(nothingstring,1);
+skip861:
+qbs_cleanup(qbs_tmp_base,0);
+if(!qbevent)break;evnt(15);}while(r);
+do{
+qbg_sub_locate( 16 , 5 ,NULL,NULL,NULL,3);
+if(!qbevent)break;evnt(15);}while(r);
+do{
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("X1= ?",5));
+if (new_error) goto skip862;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("             ",13));
+if (new_error) goto skip862;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+qbs_print(nothingstring,1);
+skip862:
+qbs_cleanup(qbs_tmp_base,0);
+if(!qbevent)break;evnt(15);}while(r);
+do{
+qbg_sub_locate( 18 , 5 ,NULL,NULL,NULL,3);
+if(!qbevent)break;evnt(15);}while(r);
+do{
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("X2= ?",5));
+if (new_error) goto skip863;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("             ",13));
+if (new_error) goto skip863;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+qbs_print(nothingstring,1);
+skip863:
+qbs_cleanup(qbs_tmp_base,0);
+if(!qbevent)break;evnt(15);}while(r);
+do{
+goto LABEL_1;
+if(!qbevent)break;evnt(15);}while(r);
+LABEL_3:;
+last_line=3;
+if(qbevent){evnt(16);r=0;}
+do{
+qbg_sub_locate( 16 , 5 ,NULL,NULL,NULL,3);
+if(!qbevent)break;evnt(16);}while(r);
+do{
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("X1= ",4));
+if (new_error) goto skip864;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_add(qbs_str((float)(((-(*__SINGLE_B))+(func_sqr(*__SINGLE_DELTA)))/ ( 2 **__SINGLE_A))),qbs_new_txt(" ")));
+if (new_error) goto skip864;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("              ",14));
+if (new_error) goto skip864;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+skip864:
+qbs_cleanup(qbs_tmp_base,0);
+if(!qbevent)break;evnt(16);}while(r);
+LABEL_4:;
+last_line=4;
+if(qbevent){evnt(17);r=0;}
+do{
+qbg_sub_locate( 18 , 5 ,NULL,NULL,NULL,3);
+if(!qbevent)break;evnt(17);}while(r);
+do{
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("X2= ",4));
+if (new_error) goto skip865;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_add(qbs_str((float)(((-(*__SINGLE_B))-(func_sqr(*__SINGLE_DELTA)))/ ( 2 **__SINGLE_A))),qbs_new_txt(" ")));
+if (new_error) goto skip865;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("              ",14));
+if (new_error) goto skip865;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+skip865:
+qbs_cleanup(qbs_tmp_base,0);
+if(!qbevent)break;evnt(17);}while(r);
+S_53:;
+if ((-(((float)((((-(*__SINGLE_B))+(func_sqr(*__SINGLE_DELTA)))/ ( 2 **__SINGLE_A))))==((float)((((-(*__SINGLE_B))-(func_sqr(*__SINGLE_DELTA)))/ ( 2 **__SINGLE_A))))))||new_error){
+if(qbevent){evnt(18);if(r)goto S_53;}
+do{
+qbg_sub_locate( 20 , 5 ,NULL,NULL,NULL,3);
+if(!qbevent)break;evnt(18);}while(r);
+do{
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_new_txt_len("UMA UNICA RAIZ X= ",18));
+if (new_error) goto skip866;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+tqbs=qbs_new(0,0);
+qbs_set(tqbs,qbs_add(qbs_str((float)(((-(*__SINGLE_B))+(func_sqr(*__SINGLE_DELTA)))/ ( 2 **__SINGLE_A))),qbs_new_txt(" ")));
+if (new_error) goto skip866;
+makefit(tqbs);
+qbs_print(tqbs,0);
+qbs_free(tqbs);
+qbs_print(nothingstring,1);
+skip866:
+qbs_cleanup(qbs_tmp_base,0);
+if(!qbevent)break;evnt(18);}while(r);
+}
+do{
+goto LABEL_1;
+if(!qbevent)break;evnt(19);}while(r);
+sub_end();
+return;
+}

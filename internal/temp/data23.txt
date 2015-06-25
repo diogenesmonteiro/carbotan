@@ -1,0 +1,4 @@
+double fornext_value843;
+double fornext_finalvalue843;
+double fornext_step843;
+uint8 fornext_step_negative843;

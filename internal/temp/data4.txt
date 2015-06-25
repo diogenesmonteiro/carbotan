@@ -1,0 +1,38 @@
+byte_element_struct *byte_element_204=NULL;
+if (!byte_element_204){
+if ((mem_static_pointer+=12)<mem_static_limit) byte_element_204=(byte_element_struct*)(mem_static_pointer-12); else byte_element_204=(byte_element_struct*)mem_static_malloc(12);
+}
+byte_element_struct *byte_element_205=NULL;
+if (!byte_element_205){
+if ((mem_static_pointer+=12)<mem_static_limit) byte_element_205=(byte_element_struct*)(mem_static_pointer-12); else byte_element_205=(byte_element_struct*)mem_static_malloc(12);
+}
+float pass206;
+float pass207;
+qbs *print_using_format209;
+qbs *print_using_format210;
+qbs *print_using_format211;
+qbs *print_using_format213;
+qbs *print_using_format214;
+qbs *print_using_format220;
+byte_element_struct *byte_element_221=NULL;
+if (!byte_element_221){
+if ((mem_static_pointer+=12)<mem_static_limit) byte_element_221=(byte_element_struct*)(mem_static_pointer-12); else byte_element_221=(byte_element_struct*)mem_static_malloc(12);
+}
+qbs *print_using_format223;
+byte_element_struct *byte_element_224=NULL;
+if (!byte_element_224){
+if ((mem_static_pointer+=12)<mem_static_limit) byte_element_224=(byte_element_struct*)(mem_static_pointer-12); else byte_element_224=(byte_element_struct*)mem_static_malloc(12);
+}
+byte_element_struct *byte_element_225=NULL;
+if (!byte_element_225){
+if ((mem_static_pointer+=12)<mem_static_limit) byte_element_225=(byte_element_struct*)(mem_static_pointer-12); else byte_element_225=(byte_element_struct*)mem_static_malloc(12);
+}
+byte_element_struct *byte_element_229=NULL;
+if (!byte_element_229){
+if ((mem_static_pointer+=12)<mem_static_limit) byte_element_229=(byte_element_struct*)(mem_static_pointer-12); else byte_element_229=(byte_element_struct*)mem_static_malloc(12);
+}
+byte_element_struct *byte_element_232=NULL;
+if (!byte_element_232){
+if ((mem_static_pointer+=12)<mem_static_limit) byte_element_232=(byte_element_struct*)(mem_static_pointer-12); else byte_element_232=(byte_element_struct*)mem_static_malloc(12);
+}
+qbs *print_using_format234;
